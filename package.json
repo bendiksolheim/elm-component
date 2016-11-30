@@ -1,0 +1,16 @@
+{
+  "name": "elm-component",
+  "version": "1.0.0",
+  "description": "An attempt to automate boilerplate in the elm architecture",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bendik Solheim",
+  "license": "Apache-2.0",
+  "bin": "./bin/index.js",
+  "preferGlobal": true,
+  "directories": {
+    "bin": "./bin"
+  }
+}
