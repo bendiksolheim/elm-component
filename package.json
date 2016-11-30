@@ -1,6 +1,6 @@
 {
   "name": "elm-component",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An attempt to reduce boilerplate in The Elm Architecture",
   "main": "index.js",
   "scripts": {
