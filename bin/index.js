@@ -35,11 +35,13 @@ function readTemplate(filename) {
     return fs.readFileSync(path.join(__dirname, '..', 'templates', filename), 'utf8');
 }
 
-function writeModule(filename, content) {
-    fs.writeFile(path.join('.', component, filename), content);
+function writeModule(filename, content, cb) {
+    fs.writeFile(path.join('.', component, filename), content, cb);
 }
 
-mkdir(component);
+if (!mkdir(component)) {
+  process.exit(1);
+}
 files.map(file => {
     file.content = readTemplate(file.filename);
     return file;
@@ -47,7 +49,12 @@ files.map(file => {
     const formatArgs = Array(file.entries + 1).fill(component);
     formatArgs[0] = file.content;
     const module = util.format.apply(util, formatArgs);
-    writeModule(file.filename, module);
+    writeModule(file.filename, module, function (err) {
+        if (err) {
+            console.error(error);
+            process.exit(1);
+        }
+    });
 });
 // const f = fs.readFileSync(path.join(__dirname, 'test.txt'), 'utf8');
 // console.log(util.format(f, component));
