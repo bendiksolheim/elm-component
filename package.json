@@ -1,6 +1,6 @@
 {
   "name": "elm-component",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "An attempt to reduce boilerplate in The Elm Architecture",
   "main": "./bin/index.js",
   "bin": {
@@ -13,7 +13,12 @@
     "type": "git",
     "url": "git+https://github.com/bendiksolheim/elm-component.git"
   },
-  "keywords": ["elm", "cli", "elm component", "starter-packs"],
+  "keywords": [
+    "elm",
+    "cli",
+    "elm component",
+    "starter-packs"
+  ],
   "author": "Bendik Solheim",
   "license": "Apache-2.0",
   "preferGlobal": true,
