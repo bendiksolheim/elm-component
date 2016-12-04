@@ -9,4 +9,3 @@ type alias Model =
 initModel : Model
 initModel =
     Model ""
-
