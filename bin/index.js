@@ -5,7 +5,7 @@ const util = require('util');
 const args = process.argv;
 
 const files = [
-    {filename: 'Model.elm', entries: 2},
+    {filename: 'Model.elm', entries: 1},
     {filename: 'View.elm', entries: 3},
     {filename: 'Update.elm', entries: 3},
     {filename: 'Subscriptions.elm', entries: 3},
