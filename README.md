@@ -1,5 +1,10 @@
 # elm-component
 
+**Warning:** please don’t use this. It is the wrong way of organizing your Elm
+code, and will lead to nothing but trouble in the end. Instead, I urge you to
+read the comments in the following reddit thread:
+https://www.reddit.com/r/elm/comments/5jd2xn/how_to_structure_elm_with_multiple_models/
+
 Although The Elm Architecture is one of the really nice parts of Elm, it has a
 few problems with boilerplate. Creating new components is perhaps one of the
 more booring tasks. `elm-component` tries to reduce some of this pain by
